@@ -8,4 +8,4 @@ spec:
     image: ubuntu:latest
     # Just spin & wait forever
     command: [ "/bin/bash", "-c", "--" ]
-    args: [ "while true; echo LogsTo_Storage_Account_Example; do sleep 30; done;" ]
+    args: [ "while true; DATETIME=$(date); echo $DATETIME; do sleep 30; done;" ]
